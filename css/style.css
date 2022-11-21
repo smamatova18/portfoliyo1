@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Caveat:wght@400;600&family=Creepster&family=Cutive+Mono&family=Fredericka+the+Great&family=Fuzzy+Bubbles:wght@400;700&family=Henny+Penny&family=Love+Ya+Like+A+Sister&family=Monoton&family=Permanent+Marker&family=Pinyon+Script&family=Quintessential&family=Roboto:wght@100;300&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Maze&family=Rubik+Moonrocks&family=Vast+Shadow&display=swap');
+:root{
+    --Roboto: 'Bungee Inline', cursive;
+    --FuzzyBubbles: 'Bungee Shade', cursive;
+    --Caveat: 'Caveat', cursive;
+    --PermanentMarker: 'Creepster', cursive;
+    --Monoton: 'Cutive Mono', monospace;
+    --CutiveMono: 'Fredericka the Great', cursive;
+    --FrederickatheGreat: 'Fuzzy Bubbles', cursive;
+    --PinyonScript: 'Henny Penny', cursive;
+    --Quintessential: 'Love Ya Like A Sister', cursive;
+    --Creepster: 'Monoton', cursive;
+    --HennyPenny: 'Permanent Marker', cursive;
+    --BungeeInline: 'Pinyon Script', cursive;
+    --RubikDirt: 'Quintessential', cursive;
+    --RubikDistressed: 'Roboto', sans-serif;
+    --RubikMaze: 'Rubik Dirt', cursive;
+    --RubikMoonrocks: 'Rubik Distressed', cursive;
+    --BugeeShade: 'Rubik Maze', cursive;
+    --LoveYaLikeAsister: 'Rubik Moonrocks', cursive;
+    --VastShadow : 'Vast Shadow', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1;
+    background-color:white;
+}
+.container{
+    max-width: 1320px;
+    margin:  0 auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header{
+    width: 100%; 
+}
+form{
+    display: flex;
+    justify-content: flex-end;
+}
+.navigation{
+    padding: 2rem;
+    cursor: pointer;
+    background-color:black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo input{
+    display:flex;
+    margin-left:55rem;
+    width: 53rem;
+    height: 2rem;
+    background-color: rgb(102, 102, 102);
+    border: none;
+    border-radius: 2px ;
+    border-bottom: 1px solid #000;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    border-bottom:1px solid black ;
+    background:linear-gradient(to right,  #fbfbfb,#e9e9e9);
+}
+input{
+    background-color: dimgray;
+    width:23rem;
+    height: 2rem;
+    color:chartreuse;
+}
+.Search{
+     width:7rem;
+     height: 2.3rem;
+}
+.blog{
+    padding: 1rem 0 ;
+    cursor: pointer; 
+}
+.blog__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.blog__item a{
+   font-family:var(--Monoton);
+   font-size:4rem;
+  color:dimgray;
+}
+.blog__title a{
+    font-family:var(--Monoton);
+    font-size:2rem;
+    color:dimgray;  
+    opacity: 1;
+    transition: 0.1s linear;
+}
+.blog__title a:hover{
+    color: chartreuse;
+}
+input::placeholder{ 
+   color: chartreuse;
+}
+.blog__item p{
+  font-size: 1rem;
+  color:chartreuse;
+}
+.cursus{
+    width: 100%;
+    background-color: chartreuse;
+    padding: 2rem;
+}
+.cursus__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    
+}
+.cursus__item{
+    cursor: pointer;
+}
+.cursus__title{
+    color: dimgray;
+    text-transform: capitalize;
+}
+.cursus__title h2{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+.cursus__title p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.cursus__img1{
+    width: 90%;
+    height: 60%;
+    margin-top: 1rem;
+    border: 5px solid black;
+    background-color: rgb(54, 51, 51);
+}
+.cursus__img1 h1{
+    font-size: 3rem;
+    padding:5px 5px ;
+    text-align: center;
+    margin-top: 25%;
+    
+}
+.item__items{
+margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    margin-bottom: 1%;
+    
+}
+.cursus__box{
+    border: 3px solid black;
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    background-color:rgb(80, 77, 77);
+    border-radius: 3px;
+    margin-bottom: %;
+}
+.cursus__box h1{
+    font-size: 1rem;
+    padding:5px 5px ;
+    text-align: center;
+    margin-top: 35%;
+    
+}
+.cursus__img{
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    margin-top: 6.2rem;
+    border: 5px solid black;
+    background-color: rgb(49, 46, 46);
+    display: flex;
+    justify-content: space-evenly;
+}
+.cursus__img img{
+    width: 27%;
+    height: 50%;
+    margin-top: 5.5rem;
+    margin-right: 1rem;
+    border: 3px solid black;
+}
+.cursus__img__title{
+    padding: 10px;
+    margin-top: 2rem;
+}
+.cursus__img__title h3{
+    font-family: var(--CutiveMono);
+    font-size: 1.3rem;
+    color:rgb(155, 225, 85);
+    letter-spacing:  3px;
+    margin-bottom: 2rem;
+}
+.cursus__img__title p{
+    font-family: var(--CutiveMono);
+    font-size: 0.9rem;
+    word-spacing: 2px;
+    color:rgb(155, 225, 85);
+}
+.cursus__item button{
+    font-family: var(--Quintessential);
+    color: chartreuse;
+    background-color: dimgray;
+    padding: 5px 5px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 45%;
+}
+/* blog */
+.blogs{
+    width:100%;
+    background-color:black;
+    padding: 3rem;
+
+}
+.blogs__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-left: 0%;
+
+}
+.blogs__item{
+    cursor: pointer;
+}
+.blogs__title{
+    color: dimgray;
+    text-transform: capitalize;
+
+}
+.blogs__title h2{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    font-family: var(--CutiveMono);
+    color: dimgray;
+    border-bottom: 2px solid dimgray;
+}
+.blogs__title p{
+    font-family: var(--CutiveMono);
+    font-size: 0.9rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    color: dimgray;
+}
+.cursus__img18{
+    
+        width: 90%;
+        height: 90%;
+        margin-top: 1rem;
+        border: 5px solid black;
+        background-color: rgb(54, 51, 51);
+       
+}
+.cursus__img18 h1{
+    font-size: 3rem;
+    padding:5px 5px ;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 9rem;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 80%;
+    background-color:chartreuse;
+    padding: 3rem;
+}
+.footer__content{
+    margin-left: 0%;
+}
+.footer__item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.footer__title{
+    color: dimgray;
+    text-transform: capitalize;
+}
+.footer__title h2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    font-family: var(--CutiveMono);
+    color: black;
+    border-bottom: 2px solid dimgray;
+}
+.footer__title p{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    font-family: var(--CutiveMono);
+    color: dimgray;
+
+}
+.footer__title input{
+    display:flex;
+    margin-left:0.5rem;
+    width: 13rem;
+    height: 2rem;
+    background-color: rgb(102, 102, 102);
+    border: none;
+    border-radius: 2px ;
+    border-bottom: 1px solid #000;
+    border-radius: 5%;
+    border:2px solid black;
+    outline: none;
+    background:linear-gradient(to right, rgb(158, 148, 148));
+    margin-bottom: 2rem;
+}
+.footer__title input::placeholder{
+    color: chartreuse;
+ }
+ .oxiri{
+    width:100%;
+    background-color:black;
+    padding: 3rem;
+ }
+ .oxiri__content{
+    margin-left: 0%;
+ }
+ .oxiri__item{
+    color: dimgray;
+    text-transform: capitalize;
+ }
+ .oxiri__title{
+    margin-left: 35%;
+    margin-bottom: 2rem;
+    color: dimgray;
+ }
+ .icon{
+    margin-left: 42%;
+
+ }
+ .icon a:hover{
+    color: chartreuse;
+ }
+ .oxiri__title a:hover{
+    color: chartreuse;
+ }
+ .oxiri__title a{
+    color: rgb(234, 223, 223);
+ }
+ .icon a{
+    color: rgb(238, 226, 226);
+ }
+
+
